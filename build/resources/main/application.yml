@@ -1,0 +1,8 @@
+spring.application.name: notetaking
+
+server:
+  port: 8080
+
+springdoc.swagger-ui:
+  operationsSorter: method
+  tagsSorter: alpha

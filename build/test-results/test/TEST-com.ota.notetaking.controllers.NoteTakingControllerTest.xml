@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ota.notetaking.controllers.NoteTakingControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-04-20T05:02:54" hostname="DENZKULIT" time="0.754">
+  <properties/>
+  <testcase name="updateNote_ValidIdAndNote_ReturnsUpdatedNote()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.22"/>
+  <testcase name="getAllNotes_ReturnsListOfNotes()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.12"/>
+  <testcase name="getNoteById()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.089"/>
+  <testcase name="deleteAllNotes()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.08"/>
+  <testcase name="deleteNoteById_ValidId()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.076"/>
+  <testcase name="createNote_ValidNote_ReturnsCreated()" classname="com.ota.notetaking.controllers.NoteTakingControllerTest" time="0.148"/>
+  <system-out><![CDATA[2024-04-20T13:02:54.033+08:00  INFO 24468 --- [notetaking] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ota.notetaking.controllers.NoteTakingControllerTest]: NoteTakingControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-04-20T13:02:54.037+08:00  INFO 24468 --- [notetaking] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ota.notetaking.NotetakingApplication for test class com.ota.notetaking.controllers.NoteTakingControllerTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

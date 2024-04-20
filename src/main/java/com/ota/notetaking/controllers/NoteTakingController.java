@@ -41,7 +41,7 @@ public class NoteTakingController {
     }
 
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    @Operation(summary = "Update Note", description = "API for updating an existing note." , tags = "C. Updating Notes")
+    @Operation(summary = "Update Note By ID", description = "API for updating an existing note." , tags = "C. Updating Notes")
     public Mono<Note> updateNote(@PathVariable Long id, @Valid @RequestBody NotePayload updatedNote) {
         return noteService.updateNote(id, updatedNote);
     }
