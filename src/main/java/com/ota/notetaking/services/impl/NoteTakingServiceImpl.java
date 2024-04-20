@@ -2,6 +2,7 @@ package com.ota.notetaking.services.impl;
 
 import com.ota.notetaking.exceptions.NoteTakingServiceException;
 import com.ota.notetaking.models.Note;
+import com.ota.notetaking.models.NotePayload;
 import com.ota.notetaking.services.NoteTakingService;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -21,8 +22,12 @@ public class NoteTakingServiceImpl implements NoteTakingService {
     private static final String NOTE_NOT_FOUND_WITH_ID = "Note not found with id: ";
 
     @Override
-    public Mono<Note> createNote(Note note) {
+    public Mono<Note> createNote(NotePayload payload) {
         long id = idCounter.incrementAndGet();
+        var note = Note.builder()
+                .title(payload.getTitle())
+                .body(payload.getBody())
+                .build();
         note.setId(id);
         note.setCreationDate(LocalDateTime.now());
         notes.put(id, note);
@@ -45,7 +50,7 @@ public class NoteTakingServiceImpl implements NoteTakingService {
     }
 
     @Override
-    public Mono<Note> updateNote(Long id, Note updatedNote) {
+    public Mono<Note> updateNote(Long id, NotePayload updatedNote) {
         return Mono.fromCallable(() -> {
             Note existingNote = notes.get(id);
             if (existingNote != null) {
