@@ -9,6 +9,7 @@ Welcome to the Simple Note-taking API built with Spring Boot! This API allows yo
 - JDK 17+
 - Git
 - Git Bash or IDE that supports Gradle build tool
+- Windows OS
 
 ## Setup and Usage
 
@@ -41,6 +42,8 @@ Please use Git Bash or similar when executing the commands.
 5. **Access the API:**
 
     - Once running, Visit the API Documentation links below for a more detailed API Specifications.
+  
+**Note:** To exit the app, press CTRL+C
 
 ## API Documentation
 
