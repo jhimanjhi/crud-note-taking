@@ -33,7 +33,7 @@ Welcome to the Simple Note-taking API built with Spring Boot! This API allows yo
 4. **Run the Application:**
 
     ```bash
-    ./gradlew build
+    ./gradlew bootRun
     ```
 
 5. **Access the API:**
