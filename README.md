@@ -8,7 +8,7 @@ Welcome to the Simple Note-taking API built with Spring Boot! This API allows yo
 
 - JDK 17+
 - Git
-- IDE that supports Gradle build tool
+- Git Bash or IDE that supports Gradle build tool
 
 ## Setup and Usage
 
@@ -27,14 +27,13 @@ Welcome to the Simple Note-taking API built with Spring Boot! This API allows yo
 3. **Build the Application:**
 
     ```bash
-    javac -d target src/main/java/com/ota/*.java
-    jar -cvfe notes-api.jar com.ota.Main -C target/ .
+    ./gradlew build
     ```
 
 4. **Run the Application:**
 
     ```bash
-    java -jar notes-api.jar
+    ./gradlew bootRun
     ```
 
 5. **Access the API:**
