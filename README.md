@@ -12,6 +12,8 @@ Welcome to the Simple Note-taking API built with Spring Boot! This API allows yo
 
 ## Setup and Usage
 
+Please use Git Bash or similar when executing the commands.
+
 1. **Clone the Repository:**
 
     ```bash
